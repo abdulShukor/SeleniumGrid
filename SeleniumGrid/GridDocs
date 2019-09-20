@@ -1,0 +1,73 @@
+Commands in Hub Machine
+1.Setting Up Hub:
+java -jar selenium-server-standalone-2.44.0.jar -role hub
+2.Validating Hub started 
+http://localhost:4444/grid/console
+Commands in Node Machine
+3.Accessing Hub from Node Machine
+http://iporhostnameofHub:4444/grid/console 
+4.Registering Node with Hub
+Java –jar selenium-server-standalone-2.44.0.jar –role webdriver –hub http://iporhostnameofHub:4444/grid/register -port 5566
+Commands in Hub Machine
+1.Setting Up Hub:
+java -jar selenium-server-standalone-2.44.0.jar -role hub
+2.Validating Hub started 
+http://localhost:4444/grid/console
+Commands in Node Machine
+3.Accessing Hub from Node Machine
+http://iporhostnameofHub:4444/grid/console 
+4.Registering Node with Hub
+Java –jar selenium-server-standalone-2.44.0.jar –role webdriver –hub http://iporhostnameofHub:4444/grid/register -port 5566
+
+
+Selenium Grid:
+
+Selenium-Grid allows you run your tests on different machines against different browsers 
+5 testcases 
+Selenium-Grid support distributed test execution. 
+You can also run the Tests in Parallel in multiple machines on Selenium Grid
+HUB- IE 9  -   chrome browser,IE11
+50 testcases
+
+ 
+What is Hub?
+•	The Hub is the central point that will receive all the test request and distribute them the the right nodes.
+There should only be one hub in a grid.
+The machine containing the hub is where the tests will be triggered, but you will see the browser being automated on the node.
+•	
+
+•	Node :
+Nodes are the Selenium instances that will execute the tests that you loaded on the hub. Nodes can be launched on multiple machines with different platforms and browsers.
+•	
+
+Steps 
+1.	Download Selenium server jar
+2.	Started the hub
+java -jar selenium-server-standalone-3.8.1.jar -role hub
+
+3.	Login to another machine and register it as node for Hub 
+4.	Download the selenium server jar in node machine as well/ Check java-
+5.	java -jar selenium-server-standalone-3.8.1.jar -role webdriver -hub >ipaddress>/grid/register -port 5566
+( Check if java is configured in system variables)
+
+6.Chrome driver.exe file  geckodriver- 
+
+
+
+
+
+
+Commands in Hub Machine
+1.Setting Up Hub:
+java -jar selenium-server-standalone-2.44.0.jar -role hub
+2.Validating Hub started 
+http://localhost:4444/grid/console
+Commands in Node Machine
+3.Accessing Hub from Node Machine
+http://iporhostnameofHub:4444/grid/console 
+4.Registering Node with Hub
+Java –jar selenium-server-standalone-2.44.0.jar –role webdriver –hub http://iporhostnameofHub:4444/grid/register -port 5566
+
+Code in Hub Machine
+
+
